@@ -1,12 +1,11 @@
-**# E-Commerce Sales datsa Analysis -Excel-Dashboard**
+**E-Commerce Data Analysis Project**
+📌 Introduction
 
-📦 E‑Commerce Sales Database Project (Excel)
+This project transforms raw e-commerce data into actionable insights through structured analysis and interactive dashboards.
+The goal is to highlight key performance indicators (KPIs), customer trends, and product performance, enabling stakeholders to make data-driven decisions with clarity and efficiency.
+----------------------------
+
 🎯 Objective
-To design and implement an Excel‑based database and dashboard system that manages and analyzes sales data for an e‑commerce platform. The project aims to provide efficient storage, retrieval, and reporting of customer orders, product inventory, and transaction history using Excel tables, formulas, and pivot charts.
-
--------------------------------
-
-🗂 Scope
 Customer Management: Maintain customer details, contact information, and purchase history.
 
 Product Catalog: Track product details including categories, pricing, stock levels, and supplier information.
@@ -41,8 +40,25 @@ Orders → OrderID, CustomerID, OrderDate, Status, PaymentMethod
 OrderDetails → OrderDetailID, OrderID, ProductID, Quantity, UnitPrice
 
 Payments → PaymentID, OrderID, Amount, PaymentDate, Method.
+---------------------
+
+🛠️ Data Cleaning
+Removed duplicate values
+Handled missing data using AVERAGE, IF, ISBLANK, AVERAGEIF
+Corrected inconsistencies with PROPER and TRIM
 
 ----------------------------
+🔍 Data Exploration & Profiling
+Integrated datasets using VLOOKUP and XLOOKUP
+Categorized customers into age groups (Young Adult, Middle Adult, Older Adult)
+Applied conditional logic for segmentation
+---------------------------
+📈 Data Analysis & Modelling
+Applied Excel functions (IF, AVERAGE, AVERAGEIF, ISBLANK)
+Used Data Analysis Toolpak for statistical summaries (mean, median, mode)
+Built relationships between tables for integrated analysis
+Created PivotTables for deeper insights
+-----------------
 
 **Relationships:**
 
@@ -51,15 +67,6 @@ Use VLOOKUP/XLOOKUP or INDEX‑MATCH to connect Customers → Orders.
 Orders ↔ Products linked via OrderDetails.
 
 Suppliers → Products linked by SupplierID.
-
-📊 Features
-PivotTables & PivotCharts for:
-
-Monthly revenue trends.
-
-Top customers and top products.
-
-Regional sales distribution.
 
 Formulas:
 
@@ -84,74 +91,48 @@ Interactive slicers for filtering by date, product, or customer.
 KPI cards (Total Sales, Average Order Value, Top 5 Salespeople).
 
 ------------------------------
+📊 Key Findings
+Gender-wise sales totals
+Category-wise average spending
+Age group spending patterns
+Region-wise total sales & discount analysis
+Top 10 stores by revenue
+Yearly revenue trends
+Loyalty level performance
+Payment type preferences
+--------------------------
+📉 Analytical Insights Dashboard
+The final dashboard provides:
 
-🚀 Deliverables
-Excel workbook with structured tables.
+Descriptive Analysis: Female customers spend more; Middle Adults (29–44) are top spenders; Clothing dominates revenue.
+Diagnostic Analysis: West region sales declined due to reduced discounts; Gold & Silver loyalty tiers underperform.
+Predictive Analysis: Female spending in clothing & beauty will keep rising; West region sales will decline without discounts; Bronze customers show steady growth.
+Prescriptive Analysis: Focus on female-driven categories, adjust discounts in West, improve loyalty perks for Gold & Silver tiers.
+----------------------
 
-PivotTables and charts for analysis.
+✅ Conclusion
+The business should:
 
-Dashboard sheet with interactive visuals.
+Reinforce female-driven categories
+Recalibrate regional discount strategies
+Restructure loyalty programs to re-engage premium customers
+Encourage Bronze customers to upgrade
+-------------------------
 
-Documentation explaining formulas, table design, and usage.
+📂 Tech Stack
+Excel: Data cleaning, modelling, PivotTables, Toolpak
+Dashboard Tools: Interactive visualization for KPIs and insights
+
+-----------------------
 
 🔑 Benefits
 Centralized and structured data management in Excel.
 
 Faster reporting and decision‑making without external tools.
 
-Scalable design for integration with Power BI or other BI platforms later.
+Scalable design for integration with Power BI or other BI platforms later
 
-
-
-Relationships:
-
-Use VLOOKUP/XLOOKUP or INDEX‑MATCH to connect Customers → Orders.
-
-Orders ↔ Products linked via OrderDetails.
-
-Suppliers → Products linked by SupplierID.
-📊 Features
-
-PivotTables & PivotCharts for:
-
-Monthly revenue trends.
-
-Top customers and top products.
-
-Regional sales distribution.
-
-Formulas:
-
-SUMIFS for filtered totals (e.g., sales by category).
-
-COUNTIFS for customer order frequency.
-
-IFERROR for clean lookups.
-
-Conditional Formatting:
-
-Highlight low stock levels.
-
-Flag overdue payments.
-Dashboards:
-
-Interactive slicers for filtering by date, product, or customer.
-
-KPI cards (Total Sales, Average Order Value, Top 5 Salespeople).
-
-🚀 Deliverables
-
-
-Excel workbook with structured tables.
-
-PivotTables and charts for analysis.
-
-Dashboard sheet with interactive visuals.
-
-
-Documentation explaining formulas, table design, and usage.
-
-🔑 Benefits
 Centralized and structured data management in Excel.
+
 Faster reporting and decision‑making without external tools.
 
